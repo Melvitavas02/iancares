@@ -14,6 +14,7 @@ export default function Header() {
       >
         <div className="section-container flex justify-between items-center py-2 md:py-3">
           {/* Logo */}
+
          {/* Logo (smooth-scroll if on same page, fallback to home) */}
 <a
   href="/#home"
@@ -38,6 +39,7 @@ export default function Header() {
     />
   </div>
 </a>
+
 
 
           {/* Desktop Navigation */}
@@ -67,7 +69,9 @@ export default function Header() {
               STORIES
             </Link>
             <Link
+
               href="/gallery"
+
              className="text-[#0A4D68] hover:text-[#EFC219] transition-colors duration-300"
             >
               GALLERY
@@ -92,7 +96,9 @@ export default function Header() {
             className="hidden md:flex items-center gap-2 bg-[#EFC219] hover:bg-white text-[#0A4D68] hover:text-[#117EA0] text-sm md:text-base font-semibold px-4 md:px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:shadow-lg"
           >
             <Phone size={18} />
+
             +91&nbsp;97402 96297
+
           </Link>
 
           {/* Mobile Menu Button */}
@@ -120,9 +126,11 @@ export default function Header() {
               <Link href="/stories" className="text-indigo-900 hover:text-[#EFC219] font-semibold">
                 STORIES
               </Link>
+
                <Link href="/gallery" className="text-indigo-900 hover:text-[#EFC219] font-semibold">
                 GALLERY
               </Link>
+
               <Link href="/blog" className="text-indigo-900 hover:text-[#EFC219] font-semibold">
                 BLOG
               </Link>
@@ -136,7 +144,11 @@ export default function Header() {
                 className="flex items-center gap-2 bg-[#EFC219] hover:bg-white text-[#0A4D68] hover:text-[#117EA0] px-6 py-2 rounded-full transition-colors font-semibold w-full justify-center"
               >
                 <Phone size={18} />
+
                 +91 97402 96297
+
+                +91 8750075006
+
               </Link>
             </nav>
           </div>

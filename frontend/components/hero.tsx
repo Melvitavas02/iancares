@@ -94,8 +94,8 @@ export default function Hero(){
           </p>
 
           <div>
-           <button
-  onClick={() => router.push("/contact")}
+          <button
+  onClick={() => router.push("/services?booking=1")}
   className="inline-flex items-center gap-3 bg-white/12 text-white px-6 md:px-8 py-3 rounded-full border border-white/10 backdrop-blur-sm hover:bg-white/20 transition"
   style={{
     boxShadow: "inset 0 1px 0 rgba(255,255,255,0.03), 0 6px 18px rgba(0,0,0,0.25)",
@@ -104,6 +104,7 @@ export default function Hero(){
   BOOK A CONSULT NOW
   <ArrowRight size={18} />
 </button>
+
 
           </div>
         </div>

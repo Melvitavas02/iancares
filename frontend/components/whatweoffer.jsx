@@ -430,13 +430,14 @@ export default function WhatWeOffer() {
 
         {/* CTA */}
         <div className="flex justify-center mt-12">
-          <a
-            href="#explore"
-            className="inline-flex items-center gap-3 px-8 py-3 rounded-full text-white font-semibold shadow-xl hover:scale-[1.02] transition-transform"
-            style={{ background: PRIMARY_TEAL }}
-          >
-            Get Started <ArrowRight className="w-4 h-4" />
-          </a>
+         <Link
+  href="/services"
+  className="inline-flex items-center gap-3 px-8 py-3 rounded-full text-white font-semibold shadow-xl hover:scale-[1.02] transition-transform"
+  style={{ background: PRIMARY_TEAL }}
+>
+  Get Started <ArrowRight className="w-4 h-4" />
+</Link>
+
         </div>
       </div>
     </section>

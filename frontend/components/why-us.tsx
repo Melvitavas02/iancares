@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
@@ -36,6 +37,7 @@ const features = [
 ];
 
 export default function WhyUs() {
+  const router = useRouter();
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -290,12 +292,14 @@ export default function WhyUs() {
 
               {/* CTA Button */}
               <div className="pt-10 flex justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#004C91] to-[#00AEEF] text-white px-12 py-4 rounded-full shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.6)]"
-                >
-                  Book a Confidential Consultation
-                </Link>
+            <button
+  onClick={() => router.push("/services?booking=1")}
+  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#004C91] to-[#00AEEF] text-white px-12 py-4 rounded-full shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.6)]"
+>
+  Book a Confidential Consultation
+</button>
+
+
               </div>
             </div>
           </div>
